@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/img1.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #f1f1f1;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Charles Eudy</h1>
+    <p>Software Engineer and 3D Artist</p>
+  </div>
+</div>
+
+<div class="main">
+
+  <h1>About Me</h1>
+  <p>Add something here!</p>
+  <hr>
+  
+  <h2>Projects</h2>
+  <p>Add something here!</p>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="/images/ClimbingSystem.gif" alt="Mountains" style="width:100%">
+        <h3>VR Climbing System</h3>
+        <p>VR Climbing System V1</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="/images/ClimbingSystem2.gif" alt="Lights" style="width:100%">
+        <h3>Climbing System in VR</h3>
+        <p>VR Climbing System V2</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="/images/ScorePopupText.gif" alt="Nature" style="width:100%">
+        <h3>VR Shooting Range</h3>
+        <p>VR Shooting range inside of Wild Hunt</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="/images/NewTargetAnimations.gif" alt="Mountains" style="width:100%">
+        <h3>Another VR Shooting Range</h3>
+        <p>VR Shooting range inside of Wild Hunt</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <div class="content">
+    <img src="/images/WildHuntTitle2.png" alt="Bear" style="width:100%">
+    <h3>Wild Hunt</h3>
+    <p>Affordable VR Framework for Unity</p>
+    <p>Easy to use, Easy to setup</p>
+    </div>
+  
+  <!-- END MAIN -->
+  </div>
+
+<h2 style="text-align:center">Highlights</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="/images/Screenshot 2021-04-08 155751.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="/images/Screenshot 2021-04-08 155921.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="/images/Screenshot 2021-04-08 160007.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="/images/Screenshot 2021-04-08 205011.jpg" style="width:100%">
+  </div>
+
+  <!--<div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="/images/Screenshot 2021-04-13 101705.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="/images/Screenshot 2021-04-13 230734.jpg" style="width:100%">
+  </div> -->
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="/images/Screenshot 2021-04-08 155751.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/Screenshot 2021-04-08 155921.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/Screenshot 2021-04-08 160007.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/Screenshot 2021-04-08 205011.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <!-- <div class="column">
+      <img class="demo cursor" src="/images/img2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="/images/img3.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div> -->
+  </div>
+</div>
+<div class="footer">
+  <div style="margin: 24px 0;">
+    <a href="https://dribbble.com/CharlesE"><i class="fa fa-dribbble"></i></a> 
+    <a href="https://twitter.com/Charles00450404"><i class="fa fa-twitter"></i></a>  
+    <a href="https://www.linkedin.com/in/charles-eudy-144bb9124/"><i class="fa fa-linkedin"></i></a>  
+    <a href="https://www.youtube.com/channel/UC-CZRWMxv4oisqzlvvPF3Qg"><i class="fa fa-youtube"></i></a> 
+ </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+</body>
+</html>
